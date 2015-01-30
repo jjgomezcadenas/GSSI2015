@@ -18,7 +18,7 @@
 
 \ShortTitle{Phenomenology of Neutrinoless Double Beta Decay}
 
-\author{\speaker{J.J.\ G\'omez-Cadenas} and J.\ Mart\'in-Albo \\
+\author{\speaker{J.J.\ G\'omez-Cadenas} and J.\ Mart\'in-Albo\\
 Instituto de F\'isica Corpuscular (IFIC), CSIC \& Universitat de Valencia\\
 Calle Catedr\'atico Jos\'e Beltr\'an, 2, 46980 Paterna, Valencia, Spain\\
 E-mail: \email{gomez@mail.cern.ch}, \email{jmalbos@ific.uv.es}}
@@ -122,7 +122,7 @@ All nuclear structure effects of neutrinoless double beta decay are included in 
 %%%%%%%%%%
 \begin{figure}
 \centering
-\includegraphics[width=0.8\textwidth]{img/NME.pdf}
+\includegraphics[width=0.75\textwidth]{img/NME.pdf}
 \caption{Nuclear matrix elements (NMEs) for \bbonu\ decay to the ground state as calculated in four different frameworks: \emph{interacting shell model} (ISM) \cite{Menendez:2008jp}, \emph{quasiparticle random-phase approximation} by the T\"ubingen (QRPA T\"u) \cite{Simkovic:2013qiy} and the Jyv\"askyl\"a (QRPA Jy) \cite{Suhonen:2012ii} groups, \emph{interacting boson model} (IBM-2) \cite{Barea:2013bz} and \emph{energy density functional} method (EDF) \cite{Vaquero:2014dna}. 
 The IBM-2 calculation uses the Jastrow Miller-Spencer short-range correlations; ISM, EDF and QRPA Jy use UCOM; and QRPA T\"u uses the Argonne potential. 
 IBM-2 and QRPA T\"u NMEs are evaluated with $g_{A}=1.269$, and the rest are evaluated using $g_{A}=1.25$.}\label{fig:NME}
@@ -133,9 +133,9 @@ Figure \ref{fig:NME} summarizes the results of the most recent calculations. The
 
 The dependence of the NME on the effective axial-vector coupling constant, $g_{A}$, introduces another significant uncertainty in the calculated rates. Barea et al.\ \cite{Barea:2013bz} and Ejiri \cite{Ejiri:2010zza} have fitted the known half-lives for \bbtnu\ decay and find effective values of $g_{A}$ of about 0.8 for ISM calculations and 0.6 for IBM-2, with a mild dependence on the mass number of the isotope. In contrast, the calculated phase-space factors for neutrinoless decay are generally presented with the free-nucleon value $g_{A} \simeq1.27$ \cite{Agashe:2014kda}, measured in the weak interactions and decays of nucleons. The difference between this value and 0.6 corresponds to a factor of 20 in decay rate. The extent of the renormalization of $g_{A}$ in \bbonu\ decay remains a topic of discussion among nuclear theorists.
  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{The search for neutrinoless \mbox{double beta decay}} 
-
-
+%%%
 The discovery of neutrinoless double beta decay would represent a major breakthrough in particle physics. A single unequivocal observation of the decay would prove the Majorana nature of neutrinos and the violation of total lepton number. Unfortunately, this is by no means an easy task. The design of a detector capable of identifying efficiently and unambiguously such a rare signal poses a considerable experimental problem. To begin with, one needs a large mass of the scarce \bb\ isotopes to probe in a reasonable time the extremely long lifetimes predicted for the process. For instance, for a Majorana neutrino mass of 50~meV, we can estimate using Eq.~(\ref{eq:Tonu}) that half-lives in the range of $10^{26}$ to $10^{27}$ years must be explored, i.e.\ 17 orders of magnitude longer than the age of the universe! 
 
 A better sense of what such long half-lives mean can be grasped with a simple calculation. Consider the radioactive decay law in the approximation $T_{1/2}\gg t$, where $t$ is the observation time. In that case, the expected number of \bbonu\ decays is given by
@@ -154,20 +154,18 @@ Several other factors, like the detection efficiency or the scalability to large
 The \emph{sensitivity} of an experiment searching for new phenomena is a measure of the result that would be obtained in the absence of a true signal. More precisely, it is defined as the average confidence limit one would get from a large ensemble of experiments with the same expected background and no signal. Accordingly, the sensitivity of a double beta decay experiment to \mbb\ can be expressed combining Equations~(\ref{eq:Tonu}) and (\ref{eq:Nbb}) as
 %%%
 \begin{equation}
-\mathcal{S}(\mbb) = \mathcal{A}\ \sqrt{\frac{\overline{N}}{\varepsilon Mt}}\,, \label{eq:Sensitivity1}
+S(\mbb) = A\ \sqrt{\frac{\overline{N}}{\varepsilon Mt}}\,, \label{eq:Sensitivity1}
 \end{equation}
 %%%
 where
 %%%
 \begin{equation}
-\mathcal{A} \equiv \left(\frac{W}{N_\mathrm{A}\log2}\ \frac{m_{e}^{2}}{\Gonu\Monu^{2}} \right)^{1/2}
+A \equiv \left(\frac{W}{N_\mathrm{A}\log2}\ \frac{m_{e}^{2}}{\Gonu\Monu^{2}} \right)^{1/2}
 \end{equation}
 %%%
 is a constant that depends only on the considered \bb\ isotope and $\overline{N}$ is the average upper limit on the expected number of events in the absence of signal.
 
-For our ideal \bbonu-decay experiment, the expected background is exactly $b=0$. Therefore, under the no-signal hypothesis, the observed number of events would always be equal to zero, with no fluctuations. The average upper limit, $\overline{N}$, is in this case simply $(Mt)^{-1/2}$.
-
-For an experiment with expected background $b$, the average upper limit in the limit of large background, is well approximated  by the expression:
+For an ideal, background-free \bbonu-decay experiment, under the no-signal hypothesis, the observed number of events would always be equal to zero, with no fluctuations. The average upper limit, $\overline{N}$, is in this case simply $(Mt)^{-1/2}$. For an experiment with expected background $b$, the average upper limit in the limit of large background, is well approximated  by the expression:
 %%%
 \begin{equation}
 \overline{N}(b) \simeq k~\sqrt{b}\ . \label{eq:AverageNLimit}
@@ -176,13 +174,13 @@ For an experiment with expected background $b$, the average upper limit in the l
 Substituting Eq.~(\ref{eq:AverageNLimit}) into Eq.~(\ref{eq:Sensitivity1}), we obtain
 %%%
 \begin{equation}
-\mathcal{S}(\mbb) = \mathcal{A}'\ \left(\frac{b^{1/2}}{\varepsilon~M~t}\right)^{1/2}\,, \label{eq:Sensitivity2}
+S(\mbb) = A'\ \left(\frac{b^{1/2}}{\varepsilon~M~t}\right)^{1/2}\,, \label{eq:Sensitivity2}
 \end{equation}
 %%%
 with
 %%%
 \begin{equation}
-\mathcal{A}' \equiv \mathcal{A}\ \sqrt{k}\,.
+{A}' \equiv {A}\ \sqrt{k}\,.
 \end{equation}
 %%%
 Usually, the background is approximately proportional to the exposure, $Mt$, and to the width of the energy window $\Delta E$ defined by the resolution of the detector:
@@ -193,20 +191,13 @@ b = c \cdot M \cdot t \cdot \Delta E \,,
 with the background rate $c$ typically expressed in $\mathrm{counts}/(\mathrm{keV}\cdot\mathrm{kg}\cdot\mathrm{year})$.\footnote{Traditionally, the exposure and background rate have been expressed in units of \emph{detector mass}. However, given the disparity of detector masses used by the new generation of \bbonu-decay experiments (for example, KamLAND-Zen deploys 13 tonnes of \XE-loaded liquid scintillator, whereas GERDA will use about 40~kg of enriched germanium diodes in its seconds phase), in this work, in order to facilitate the comparison between experiments, we will express the relevant quantities in units of \bb\ isotope mass unless stated otherwise.} Equation~(\ref{eq:Sensitivity2}) then becomes
 %%%
 \begin{equation}
-\mathcal{S}(\mbb) = \mathcal{A}'\ \sqrt{1/\varepsilon}\ \left(\frac{c~\Delta E}{M~t}\right)^{1/4}\,. \label{eq:Sensitivity3}
+{S}(\mbb) = {A}'\ \sqrt{1/\varepsilon}\ \left(\frac{c~\Delta E}{M~t}\right)^{1/4}\,. \label{eq:Sensitivity3}
 \end{equation}
 %%%
 In short, the background limits dramatically the sensitivity of a double beta decay experiment, improving only as $(Mt)^{-1/4}$ instead of the $(Mt)^{-1/2}$ expected in the background-free case.
 
-%%%%%%%%%%
-\begin{figure}
-\centering
-\includegraphics[width=0.525\textwidth]{img/FCAverageUpperLimit.pdf}
-\caption{Average upper limit on the expected number of events observed by a large ensemble of experiments with the expected background and no true signal as a function of the expected background for the case of a measurement of a Poisson variable.} \label{fig:FCAverageUpperLimit}
-\end{figure}
-%%%%%%%%%%
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Ingredients for double beta decay experiments} 
 %%%
 The first objective of the new generation of double beta decay experiments, to confirm or refute experimentally the claim of a \bbonu-decay signal in \GE, has already been tackled by the leading experiments of the current generation,  EXO-200, KamLAND-Zen and GERDA. In the forthcoming years  more data from other experiments will be available as well (see next section). The ultimate goal of all these projects is the exploration of the inverted hierarchy of neutrino masses, a very ambitious objective that will require exposures close to 10$^{4}$~kg~yr and background levels of the order of $10^{-3}$~\ckky\ or better. Given the scale, cost and risk that characterize these experiments, it seems prudent to build as a first step an $\mathcal{O}(100)$-kg detector that demonstrates the performance of the experimental technique. Nevertheless, scaling up these detector to large \bb\ masses will not be straightforward in most cases. 
@@ -219,13 +210,13 @@ Some of the parameters (the energy resolution, for instance) depend only on the 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Choice of the isotope} \label{subsec:Isotope}
 %%%
-Thirty-five naturally-occurring isotopes are \bb\ emitters. Which ones are the most adequate for neutrinoless double beta decay searches? Let us start with considerations of the most favourable phase-space factors and nuclear matrix elements. To a first approximation, the phase-space factor \Gonu\ varies as $\Qbb^5$ \cite{Kotila:2012zza}. Isotopes with large $Q$ values are therefore strongly favoured. For this reason, only the eleven with $\Qbb>2$~MeV (see Table~\ref{tab:BBIsotopes}) have usually been considered for \bbonu-decay searches. As for the NMEs, all calculation methods agree that the value of \Monu\ does not change abruptly from one candidate isotope to another one. The isotopic constant $\mathcal{A}$ defined in Eq.~(\ref{eq:Sensitivity1}) shows variations of about a factor of 2 (see Figure~\ref{fig:IsotopicConstant}). In other words, within a factor of 2, the decay rate per unit mass does not depend on the \bb\ isotope.
+Thirty-five naturally-occurring isotopes are \bb\ emitters. Which ones are the most adequate for neutrinoless double beta decay searches? Let us start with considerations of the most favourable phase-space factors and nuclear matrix elements. To a first approximation, the phase-space factor \Gonu\ varies as $\Qbb^5$ \cite{Kotila:2012zza}. Isotopes with large $Q$ values are therefore strongly favoured. For this reason, only the eleven with $\Qbb>2$~MeV have usually been considered for \bbonu-decay searches. As for the NMEs, all calculation methods agree that the value of \Monu\ does not change abruptly from one candidate isotope to another one. The isotopic constant ${A}$ defined in Eq.~(\ref{eq:Sensitivity1}) shows variations of about a factor of 2 (see Figure~\ref{fig:IsotopicConstant}). In other words, within a factor of 2, the decay rate per unit mass does not depend on the \bb\ isotope.
 
 %%%%%%%%%%
-\begin{figure}[p]
+\begin{figure}
 \centering
-\includegraphics[width=0.8\textwidth]{img/SpecificSensitivity.pdf}
-\caption{Isotopic constant $\mathcal{A}$  of the eleven \bb\ isotopes
+\includegraphics[width=0.75\textwidth]{img/SpecificSensitivity.pdf}
+\caption{Isotopic constant ${A}$  of the eleven \bb\ isotopes
 with a $Q$ value larger than 2~MeV. Variations of about a factor of 2 can be found for a given set of NMEs.} \label{fig:IsotopicConstant}
 \end{figure}
 %%%%%%%%%%
@@ -234,14 +225,14 @@ with a $Q$ value larger than 2~MeV. Variations of about a factor of 2 can be fou
 Another advantage in choosing a \bb\ isotope with a high $Q$ value comes in the form of background control. As we will discuss later, backgrounds from natural radioactivity populate the energy region below 3~MeV. The possibility to use an isotope with $Q_{\beta\beta}$ above these energies is therefore desirable.
 
 %%%%%%%%%%
-\begin{figure}[p]
+\begin{figure}
 \centering
-\includegraphics[width=0.6\textwidth]{img/SensitivityVsResolution.pdf}
+\includegraphics[width=0.55\textwidth]{img/SensitivityVsResolution.pdf}
 \caption{Dependence on the energy resolution of the sensitivity to \mbb\ (at 90\% CL) of experiments with 500~$\mathrm{kg}\cdot\mathrm{year}$ of exposure and affected only by \bbtnu-decay backgrounds.} \label{fig:SensitivityVsResolution}
 \end{figure}
 %%%%%%%%%%
 
-Experimental techniques with modest energy resolution (say, more than 3--4\% FWHM at the $Q$ value) are also interested in choosing an isotope with a relatively slow two-neutrino decay mode. The significance of the \bbtnu\ spectrum as a background depends on its spectral form and rate. It is irrelevant if the energy resolution of the experiment is effectively perfect, but as the energy resolution degrades, it can become a serious background. This is illustrated in Figure~\ref{fig:SensitivityVsResolution}, where the \mbb\ sensitivity (90\% CL) as a function of the energy resolution is shown for experiments using \XE\ and \SE. The experiments are assumed to have perfect detection efficiency and be affected only by \bbtnu\ backgrounds. In these idealized conditions, it is clear that \XE\ is preferable to \SE\ for low-resolution experiments thanks to its much longer \bbtnu-decay half-life (see Table~\ref{tab:bb2nu_exp}).
+Experimental techniques with modest energy resolution (say, more than 3--4\% FWHM at the $Q$ value) are also interested in choosing an isotope with a relatively slow two-neutrino decay mode. The significance of the \bbtnu\ spectrum as a background depends on its spectral form and rate. It is irrelevant if the energy resolution of the experiment is effectively perfect, but as the energy resolution degrades, it can become a serious background. This is illustrated in Figure~\ref{fig:SensitivityVsResolution}, where the \mbb\ sensitivity (90\% CL) as a function of the energy resolution is shown for experiments using \XE\ and \SE. The experiments are assumed to have perfect detection efficiency and be affected only by \bbtnu\ backgrounds. In these idealized conditions, it is clear that \XE\ is preferable to \SE\ for low-resolution experiments thanks to its much longer \bbtnu-decay half-life \cite{Barabash:2015eza}.
 
 The general conclusion is that there is no \emph{magic} candidate, no specially favoured or disfavoured isotope among those with a $Q$ value larger than 2~MeV. The choice of the \bb\ isotope is, therefore, ultimately driven by its procurement cost  and by the experimental technique.
 
@@ -272,8 +263,8 @@ Figure~\ref{fig:SensitivityXeVsBackground} shows the sensitivity (at 90\% CL) of
 %%%%%%%%%%
 \begin{figure}
 \centering
-\includegraphics[width=0.615\textwidth]{img/SensitivityXeVsBackground.pdf}
-\caption{Sensitivity to \mbb\ (at 90\% CL) of a \XE-based experiment with perfect signal detection efficiency and four different assumptions for the background rate within the energy region of interest around \Qbb: 0.1~$\mathrm{cts}~\mathrm{kg}^{-1}~\mathrm{yr}^{-1}$ (green, dotted line); 0.01~$\mathrm{cts}~\mathrm{kg}^{-1}~\mathrm{yr}^{-1}$ (blue, dash-dot line); 0.001~$\mathrm{cts}~\mathrm{kg}^{-1}~\mathrm{yr}^{-1}$ (red, dashed line) and background-free (grey, solid line). The IBM-2 nuclear matrix element has been used to convert the half-life limits to \mbb. The grey band represents the inverted-hierarchy region of neutrino masses.} \label{fig:SensitivityXeVsBackground}
+\includegraphics[width=0.5\textwidth]{img/SensitivityXeVsBackground.pdf}
+\caption{Sensitivity to \mbb\ (at 90\% CL) of a \XE-based experiment with perfect signal detection efficiency and four different assumptions for the background rate within the energy region of interest around \Qbb: 0.1~$\mathrm{cts}~\mathrm{kg}^{-1}~\mathrm{yr}^{-1}$ (green, dotted line); 0.01~$\mathrm{cts}~\mathrm{kg}^{-1}~\mathrm{yr}^{-1}$ (blue, dash-dot line); 0.001~$\mathrm{cts}~\mathrm{kg}^{-1}~\mathrm{yr}^{-1}$ (red, dashed line) and background-free (grey, solid line). The IBM-2 nuclear matrix element \cite{Barea:2013bz} has been used to convert the half-life limits to \mbb. The grey band represents the inverted-hierarchy region of neutrino masses.} \label{fig:SensitivityXeVsBackground}
 \end{figure}
 %%%%%%%%%%
 
@@ -301,14 +292,13 @@ Neutrinoless double beta decay is extremely rare, if existent at all. A high det
 %%%
 Thousands of kilograms of \bb\ source will be needed to explore the extremely long \bbonu\ half-lives corresponding to the inverted hierarchy of neutrino masses. Most collaborations searching for \bbonu\ decay are advertising already future tonne-scale versions of their experiments. However, not all the technologies are equally suitable for that purpose. The scalability of each experimental technique will be, therefore, one of the key points --- together with the detector performance at the 100-kg stage --- for the evaluation of these proposals.
 
-Large-scale production of the \bb\ isotopes will represent a technical and logistic challenge, as well as a significant fraction of the total cost of the detectors. Some of the most popular \bb\ isotopes are, in fact, quite rare in Earth. For example, the annual world production of germanium or tellurium is a few hundred tonnes, and much less, a few tens of tons, in the case of xenon \cite{Biller:2013wua}. Moreover, with the exception of \TE, which represents approximately one third of all tellurium, the isotopic abundance of the \bb-decaying isotopes is around or below 10\%, requiring isotopic enrichment in order to obtain large, concentrated masses. In fact, this has been so far the driving cost in the procurement of the isotopes. The most cost-effective enrichment technology is centrifugal separation \cite{Biller:2013wua, Tikhomirov:2000td, Giuliani:2012zu}, but it is only possible for elements with a stable gas compound. Affordable enrichment of large quantities of those species with no gas compound, such as \CA\ or \ND, is not possible at present. Centrifugation of xenon, being a noble gas, is, of course, simpler (and hence cheaper) than that of metalloids such as germanium. Therefore, from this point of view, \XE\ would be a particularly favourable isotope to use for a tonne-scale experiment.
+Large-scale production of the \bb\ isotopes will represent a technical and logistic challenge, as well as a significant fraction of the total cost of the detectors. Some of the most popular \bb\ isotopes are, in fact, quite rare in Earth. For example, the annual world production of germanium or tellurium is a few hundred tonnes, and much less, a few tens of tons, in the case of xenon \cite{Biller:2013wua}. Moreover, with the exception of \TE, which represents approximately one third of all tellurium, the isotopic abundance of the \bb-decaying isotopes is around or below 10\%, requiring isotopic enrichment in order to obtain large, concentrated masses. In fact, this has been so far the driving cost in the procurement of the isotopes. The most cost-effective enrichment technology is centrifugal separation \cite{ Giuliani:2012zu, Biller:2013wua, Tikhomirov:2000td}, but it is only possible for elements with a stable gas compound. Affordable enrichment of large quantities of those species with no gas compound, such as \CA\ or \ND, is not possible at present. Centrifugation of xenon, being a noble gas, is, of course, simpler (and hence cheaper) than that of metalloids such as germanium. Therefore, from this point of view, \XE\ would be a particularly favourable isotope to use for a tonne-scale experiment.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Current generation of experiments} \label{sec:CurrentExperiments}
 %%%
 Three experiments of the current generation --- EXO-200, KamLAND-Zen and GERDA --- have been operating for a few years already, and at least five other --- CUORE, {\scshape Majorana}, NEXT, SNO+ and the SuperNEMO demonstrator --- plan to start taking data soon. In this section we describe them succinctly, highlighting the main features of each technique. 
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{CUORE} \label{subsec:CUORE}
@@ -325,7 +315,7 @@ The \emph{Cryogenic Underground Observatory for Rare Events} (CUORE) will search
 
 CUORE, currently under construction at the Laboratori Nazionali del Gran Sasso, will consist of 988 bolometers arranged in 19 vertical towers held by a copper frame. The basic detector element is a $5\times5\times5$~cm$^{3}$ TeO$_{2}$ crystal of 750~g instrumented with a temperature sensor and a resistive heater. The total mass of the bolometers will be 741 kg, of which 206~kg are $^{130}$Te. The bolometer towers will be housed in a cryostat composed of six nested copper vessels (see Figure~\ref{fig:Cuore}). Two cold lead shields will shield the bolometers from radiation originating in the cryostat: a layer of ancient Roman lead 6~cm thick located between the two middle copper vessels will shield the detectors from radioactivity in the outer vessels, and a disc 31 cm thick made of modern and Roman lead and located below the mixing chamber plate will shield the detectors from radioactivity in the overhead apparatus. The cryostat will be surrounded by a 73-tonnes octagonal external shield designed to screen the detector from environmental $\gamma$ rays and neutrons. The shield has three layers: an outermost layer 20~cm thick consisting of a floor and sidewalls of polyethylene to thermalize and absorb neutrons; a side layer 2~cm thick of boric-acid powder to absorb neutrons; and an innermost layer of lead bricks of at least 25~cm thickness to absorb $\gamma$ rays.
 
-CUORE aims at improving the sensitivity of Cuoricino, its predecessor, by more than a factor of 30 by operating a larger, cleaner, better-shielded detector with enhanced energy resolution. The expected energy resolution (FWHM) of the CUORE crystals is 5~keV at the $Q$ value of \TE\ (2528 keV) \cite{Artusa:2014lgv}. This resolution has already been achieved in tests performed during the R\&D phase. In Cuoricino, the average background rate in the region of interest was 0.58~\ckky. Three main contributions were identified \cite{Alessandria:2011rc}: ($30\pm10$)\% of the measured  background in the region of interest was due to multi-Compton events due to the 2615-keV gamma ray from the thorium decay chain from the contamination of the cryostat shields; ($10\pm5$)\% was due to surface contamination of the crystals (primarily degraded alphas from the natural decay chains); and ($50\pm20$)\% is ascribed to similar surface contamination of inert materials surrounding the crystals, most likely copper. On the basis of this result, the R\&D for CUORE has pursued two major complementary lines: the reduction of surface contamination and the selection of extremely radiopure construction materials. The goal is achieving a background rate in the region of interest of 0.03--0.04~\ckky\ \cite{Alessandria:2011rc}.
+CUORE aims at improving the sensitivity of Cuoricino, its predecessor, by more than a factor of 30 by operating a larger, cleaner, better-shielded detector with enhanced energy resolution. The expected energy resolution (FWHM) of the CUORE crystals is 5~keV at the $Q$ value of \TE\ (2528~keV) \cite{Artusa:2014lgv}. This resolution has already been achieved in tests performed during the R\&D phase. In Cuoricino, the average background rate in the region of interest was 0.58~\ckky. Three main contributions were identified \cite{Alessandria:2011rc}: ($30\pm10$)\% of the measured  background in the region of interest was due to multi-Compton events due to the 2615-keV gamma ray from the thorium decay chain from the contamination of the cryostat shields; ($10\pm5$)\% was due to surface contamination of the crystals (primarily degraded alphas from the natural decay chains); and ($50\pm20$)\% is ascribed to similar surface contamination of inert materials surrounding the crystals, most likely copper. On the basis of this result, the R\&D for CUORE has pursued two major complementary lines: the reduction of surface contamination and the selection of extremely radiopure construction materials. The goal is achieving a background rate in the region of interest of 0.03--0.04~\ckky\ \cite{Alessandria:2011rc}.
 
 CUORE-0, a single tower of CUORE containing 52 TeO$_{2}$ crystals, is in operation inside the Cuoricino cryostat since March 2013. It will directly test the level of backgrounds of the CUORE experiment and improve the Cuoricino sensitivity to the \TE\ \bbonu-decay half-life. CUORE is now in an advanced state of construction. The Collaboration plans to complete the integration and commissioning of the detector at the end of 2014, and commence data taking in the first half of 2015 \cite{Artusa:2014lgv}.
 
@@ -333,7 +323,7 @@ CUORE-0, a single tower of CUORE containing 52 TeO$_{2}$ crystals, is in operati
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{EXO} \label{subsec:EXO}
 %%%
-The \emph{Enriched Xenon Observatory} (EXO) is an experimental program searching for neutrinoless double beta decay using \XE. The first phase of the experiment, EXO-200 \cite{Auger:2012gs}, consists in a 200-kg liquid xenon (LXe) time projection chamber that has been taking physics data at the Waste Isolation Pilot Plant (WIPP), in New Mexico, USA, since early May 2011. The results produced so far by the experiment include the first observation of the \bbtnu\ decay of \XE\ \cite{Albert:2013gpz} and some of the most stringent limits so far on the effective Majorana neutrino mass \cite{Auger:2012ar, Albert:2014awa}. Building on the success of EXO-200, the EXO Collaboration has started the R\&D work for a future multi-tonne LXe experiment called nEXO.  
+The \emph{Enriched Xenon Observatory} (EXO) is an experimental program searching for neutrinoless double beta decay using \XE. The first phase of the experiment, EXO-200 \cite{Auger:2012gs}, consists in a 200-kg liquid xenon (LXe) time projection chamber that has been taking physics data at the Waste Isolation Pilot Plant (WIPP), in New Mexico, USA, since early May 2011. The results produced so far by the experiment include the first observation of the \bbtnu\ decay of \XE\ \cite{Albert:2013gpz} and some of the most stringent limits so far on the effective Majorana neutrino mass \cite{Albert:2014awa, Auger:2012ar}. Building on the success of EXO-200, the EXO Collaboration has started the R\&D work for a future multi-tonne LXe experiment called nEXO.  
 
 %%%%%%%%%%
 \begin{figure}
@@ -365,11 +355,10 @@ The \emph{GERmanium Detector Array} (GERDA) experiment, located in Hall A of the
 %%%%%%%%%%
 
 The GERDA experiment was planned in two physics stages.
-Phase I, which started in November 2011 and ended in March 2013, has used refurbished semi-coaxial HPGe detectors from the Heidelberg-Moscow and IGEX experiments (\textsection~\ref{sec:HistoryStatusDoubleBetaSearches}), which are isotopically enriched to 86\% in \GE, plus a non-enriched detector from the GENIUS-TF project \cite{KlapdorKleingrothaus:2000ke}, totalling a mass of 17.67~kg. In addition to these detectors, 5 broad-energy germanium (BEGe) diodes foreseen for the second phase of the experiment were deployed in July 2012. The exposure-averaged energy resolution (FWHM) of the detectors at the $Q$ value of \GE\ is $(4.8\pm0.2)$~keV for the semi-coaxial detectors and $(3.2\pm0.2)$~keV for the BEGe detectors.
+Phase I, which started in November 2011 and ended in March 2013, has used refurbished semi-coaxial HPGe detectors from the Heidelberg-Moscow and IGEX experiments, which are isotopically enriched to 86\% in \GE, plus a non-enriched detector from the GENIUS-TF project, totalling a mass of 17.67~kg. In addition to these detectors, 5 broad-energy germanium (BEGe) diodes foreseen for the second phase of the experiment were deployed in July 2012. The exposure-averaged energy resolution (FWHM) of the detectors at the $Q$ value of \GE\ is $(4.8\pm0.2)$~keV for the semi-coaxial detectors and $(3.2\pm0.2)$~keV for the BEGe detectors.
 
 The GERDA Collaboration has published a measurement of the \bbtnu\ half-life of \GE, $T^{2\nu}_{1/2} = 1.84^{+0.09}_{-0.08}\,(\mathrm{stat})\, ^{+0.11}_{-0.06}\,(\mathrm{syst})\times10^{21}$~years \cite{Agostini:2012nm}, and a limit to the \bbonu\ half-life, $T^{0\nu}_{1/2}(\GE)>2.1\times10^{25}$~yr (90\% CL) \cite{Agostini:2013mzu}. This analysis was done with 17.9~kg~yr of exposure. The achieved background rate was $(11\pm2)\times10^{-3}$~\ckky,  and the \bbonu\ signal acceptance was 86\%. The GERDA result is consistent with the limits by
-Heidelberg-Moscow and IGEX (\textsection~\ref{sec:HistoryStatusDoubleBetaSearches}). The combination of the results of the three experiments yields a limit of $3.0\times10^{25}$~years (90\% CL) \cite{Agostini:2013mzu}. Therefore, The long-standing claim for a \bbonu\ signal in \GE\ is strongly disfavoured.
-
+Heidelberg-Moscow and IGEX. The combination of the results of the three experiments yields a limit of $3.0\times10^{25}$~years (90\% CL) \cite{Agostini:2013mzu}. Therefore, the long-standing claim for a \bbonu\ signal in \GE\ is strongly disfavoured.
 
 In Phase II, besides the increase of the active mass by about 20 kg (30 BEGe detectors), the main goal is to further reduce the background by one order of magnitude thanks to several improvements in the detector setup (instrumentation of the LAr bath, materials of higher radiopurity in the vicinity of the detectors, etc.) \cite{Macolino:2014vya}. 
 
@@ -384,23 +373,22 @@ The KamLAND-Zen experiment is searching for the \bbonu\ decay of \XE\ using enri
 %%%%%%%%%%
 \begin{figure}
 \centering
-\includegraphics[width=0.7\textwidth]{img/KamLANDZen.pdf}
+\includegraphics[width=0.65\textwidth]{img/KamLANDZen.pdf}
 \caption{Schematic drawing of the KamLAND-Zen detector. Reproduced from Gando et al.\ (2012) \cite{KamLANDZen:2012aa}.} \label{fig:KamLANDZen}
 \end{figure}
 %%%%%%%%%%
 
-KamLAND-Zen, which has been collecting physics data since late 2011, has published a measurement of the half-life of the \bbtnu\ decay of \XE, $2.38\pm0.02~(\mathrm{stat})\pm0.14~(\mathrm{syst})\times10^{21}$~years \cite{KamLANDZen:2012aa}, and a limit to the half-life of the \bbonu\ decay, $2.6\times10^{25}$~years (90\% CL)~\cite{Gando:2012zm, Asakura:2014lma}. The energy resolution of the detector is 9.9\% FWHM at the $Q$ value of \XE. The achieved background rate in the region of interest is approximately $1.4\times10^{-4}$~\ckky, thanks to a tight selection cut in the fiducial volume and the identification of $^{214}$Bi events via Bi-Po tagging \cite{Asakura:2014lma}.
+KamLAND-Zen, which has been collecting physics data since late 2011, has published a measurement of the half-life of the \bbtnu\ decay of \XE, $2.38\pm0.02~(\mathrm{stat})\pm0.14~(\mathrm{syst})\times10^{21}$~years \cite{KamLANDZen:2012aa}, and a limit to the half-life of the \bbonu\ decay, $2.6\times10^{25}$~years (90\% CL)~\cite{Asakura:2014lma, Gando:2012zm}. The energy resolution of the detector is 9.9\% FWHM at the $Q$ value of \XE. The achieved background rate in the region of interest is approximately $1.4\times10^{-4}$~\ckky, thanks to a tight selection cut in the fiducial volume and the identification of $^{214}$Bi events via Bi-Po tagging \cite{Asakura:2014lma}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{SNO+} \label{subsec:SNO+}
 %%%
-SNO+, the follow-up of the \emph{Sudbury Neutrino Observatory} (SNO) \cite{Boger:1999bb}, is a multipurpose liquid scintillator experiment housed in SNOLAB (Ontario, Canada). The detector, shown in Figure~\ref{fig:SNO}, reuses many of the components of its predecessor, replacing the heavy water by 780~tonnes of liquid scintillator in order to obtain a lower energy threshold. The detector consists of a 12~m diameter acrylic vessel surrounded by about 9500 8-in photomultiplier tubes that provide a 54\% effective photocathode coverage. The acrylic vessel is immersed in a bath of ultra pure water that fills the remaining extent of the underground cavern, attenuating the background from external media such as the PMTs and surrounding rock. The density of the liquid scintillator (0.86~g/cm$^{3}$) being lower than that of the surrounding water leads to a large buoyant force on the acrylic vessel. To keep it in place, a hold-down rope net has been installed over the detector and anchored to the cavity floor.
+SNO+, the follow-up of the \emph{Sudbury Neutrino Observatory} (SNO) \cite{Boger:1999bb}, is a multipurpose liquid scintillator experiment housed in SNOLAB (Ontario, Canada). The detector reuses many of the components of its predecessor, replacing the heavy water by 780~tonnes of liquid scintillator in order to obtain a lower energy threshold. The detector consists of a 12~m diameter acrylic vessel surrounded by about 9500 8-in photomultiplier tubes that provide a 54\% effective photocathode coverage. The acrylic vessel is immersed in a bath of ultra pure water that fills the remaining extent of the underground cavern, attenuating the background from external media such as the PMTs and surrounding rock. The density of the liquid scintillator (0.86~g/cm$^{3}$) being lower than that of the surrounding water leads to a large buoyant force on the acrylic vessel. To keep it in place, a hold-down rope net has been installed over the detector and anchored to the cavity floor.
 
 The physics program of SNO+ includes the search for neutrinoless double beta decay in \TE, which will be loaded into the liquid scintillator in the form of (non-enriched) telluric acid. A loading of 0.3\%, equivalent to 780~kg of \TE, is planned for the first phase of the experiment, which will start towards the end of 2015 or beginning of 2016. 
 
 The energy resolution of the SNO+ detector is expected to be 10.5\% FWHM at the $Q$ value of \TE\ \cite{Biller:2014eha}. Consequently, the \bbtnu\ spectrum will be an important source of background. The expected levels of uranium and thorium in the liquid scintillator can also result in substantial activity near the \bbonu\ endpoint, mostly from the decays of $^{214}$Bi and $^{212}$Bi. Nevertheless, these can be, in principle, actively suppressed via Bi-Po $\alpha$ tagging \cite{Biller:2014eha}. External backgrounds (not originating in the liquid scintillator) can be suppressed with a tight fiducial volume selection, which will cut, however, about 70--80\% of the signal. 
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{SuperNEMO} \label{subsec:SuperNEMO}
@@ -415,14 +403,17 @@ The SuperNEMO collaboration proposes the construction of up to 20 modules 6.2~m 
 \end{figure}
 %%%%%%%%%%
 
-The SuperNEMO modules expect to improve the performance of the NEMO detector, both at the level of energy resolution (the projected resolution is 4\% FWHM at 3~MeV, almost a factor of 2 better than in NEMO-3 \cite{Bongrand:2014nu}) and background rate. Indeed, the 
-projected background rate in the energy region around \Qbb\ is $5\times10^{-5}$~\ckky, about 25 times better than in NEMO-3, requiring \BI\ and \TL\ impurities in the source foils to be reduced to less than $2~\mu$Bq/kg and $10~\mu$Bq/kg, respectively \cite{Bongrand:2014nu}. Radon, which will deposit \BI\ in the foil must also be controlled accordingly. 
+The SuperNEMO modules expect to improve the performance of the NEMO detector, both at the level of energy resolution (the projected resolution is 4\% FWHM at 3~MeV, almost a factor of 2 better than in NEMO-3) and background rate. Indeed, the 
+projected background rate in the energy region around \Qbb\ is $5\times10^{-5}$~\ckky, about 25 times better than in NEMO-3, requiring \BI\ and \TL\ impurities in the source foils to be reduced to less than $2~\mu$Bq/kg and $10~\mu$Bq/kg, respectively. Radon, which will deposit \BI\ in the foil must also be controlled accordingly. 
 
 The SuperNEMO collaboration is currently building a module, 
 called the \emph{Demonstrator}, which will house a slightly denser source of approximately 7~kg of \SE. The beginning of operations is projected for 2015. It will be installed in the former location of the NEMO-3 apparatus. 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{NEXT}
+%%%
+
+%%%%%%%%%%
 \begin{figure}
 \centering
 \includegraphics[width=0.9\textwidth]{img/NEXT.png}
@@ -432,9 +423,10 @@ The energy plane is made of 60 PMTs housed in copper enclosures (cans).
 The tracking plane is made of MPPCs arranged into dice boards (DB). 
 } \label{fig.NEXT100}
 \end{figure}
+%%%%%%%%%%
 
 The \emph{Neutrino Experiment with a Xenon TPC} (NEXT)\footnote{http://next.ific.uv.es/next/} will search for \bbonu\ in \XE\ using  high-pressure xenon gas  time projection chambers 
-(HPXe)\cite{Nygren:2009zz,Granena:2009it,Alvarez:2012haa}, yielding: 
+(HPXe) \cite{Nygren:2009zz,Granena:2009it,Alvarez:2012haa}, yielding: 
 a) {\bf excellent energy resolution}, with an intrinsic limit of about 0.3\% FWHM at \Qbb, and close to that of \GE\ detectors and a demonstrated result in the vicinity of 0.5\% FWHM; b)
 {\bf tracking capabilities} that provide a powerful topological signature to discriminate between signal (two electron tracks with a common vertex) and background (mostly, single electrons); c)
 {\bf a fully active and homogeneous detector}, with no dead regions; d) {\bf scalability} of the technique to large masses; 
@@ -843,6 +835,195 @@ In this paper, we have review the main experiments of the new-generation experim
    \emph{Review of Particle Physics},
    \emph{Chin.\ Phys.\ C} {\bf 38} (2014) 090001.
    %%CITATION = CHPHD,C38,090001;%%
+
+\bibitem{Barabash:2015eza}
+   A.~S.~Barabash,
+   \emph{Average and recommended half-life values for two neutrino double beta decay},
+   \emph{Nucl.\ Phys.\ A} {\bf 935} (2015) 52
+   [arXiv:1501.05133 [nucl-ex]].
+   %%CITATION = ARXIV:1501.05133;%%
+
+\bibitem{Bettini:2011zza}
+   A.~Bettini,
+   \emph{Underground laboratories},
+   \emph{Nucl.\ Instrum.\ Meth.\ A} {\bf 626-627} (2011) S64.
+   %%CITATION = NUIMA,A626-627,S64;%%
+
+\bibitem{deBarros:2011qq}
+   N.~F.~de Barros and K.~Zuber,
+   \emph{Solar neutrino-electron scattering as background limitation for double beta decay},
+   \emph{J.\ Phys.\ G} {\bf 38} (2011) 105201
+   [arXiv:1103.5757 [hep-ph]].
+   %%CITATION = ARXIV:1103.5757;%%
+
+\bibitem{Cebrian:2010zz}
+   S.~Cebri\'an, H.~Gomez, G.~Luz\'on, J.~Morales, A.~Tom\'as and J.~A.~Villar,
+   \emph{Cosmogenic activation in germanium and copper for rare event searches},
+   \emph{Astropart.\ Phys.} {\bf 33} (2010) 316.
+   %%CITATION = APHYE,33,316;%%
+
+\bibitem{Moe:1991ik}
+   M.~K.~Moe,
+   \emph{New approach to the detection of neutrinoless double beta decay},
+   \emph{Phys.\ Rev.\ C} {\bf 44} (1991) 931.
+   %%CITATION = PHRVA,C44,931;%%
+
+\bibitem{Biller:2013wua}
+   S.~D.~Biller,
+   \emph{Probing Majorana neutrinos in the regime of the normal mass hierarchy},
+   \emph{Phys.\ Rev.\ D} {\bf 87} (2013) 071301
+   [arXiv:1306.5654 [physics.ins-det]].
+   %%CITATION = ARXIV:1306.5654;%%
+
+\bibitem{Tikhomirov:2000td}
+   A.~V.~Tikhomirov,
+   \emph{Centrifugal enrichment of stable isotopes and modern physical experiments},
+   \emph{Czech.\ J.\ Phys.} {\bf 50} (2000) 577.
+   %%CITATION = CZYPA,50,577;%%
+
+\bibitem{Artusa:2014lgv}
+   D.~R.~Artusa {\it et al.} (CUORE Collaboration),
+   \emph{Searching for neutrinoless double-beta decay of $^{130}$Te with CUORE},
+   arXiv:1402.6072 [physics.ins-det].
+   %%CITATION = ARXIV:1402.6072;%%
+
+\bibitem{Arnaboldi:2002te}
+   C.~Arnaboldi {\it et al.} (CUORE Collaboration),
+   \emph{A calorimetric search on double beta decay of Te-130},
+   \emph{Phys.\ Lett.\ B} {\bf 557} (2003) 167
+   [hep-ex/0211071].
+   %%CITATION = HEP-EX/0211071;%%
+
+\bibitem{Andreotti:2010vj}
+   E.~Andreotti {\it et al.},
+   \emph{$^{130}$Te neutrinoless double-beta decay with CUORICINO},
+   \emph{Astropart.\ Phys.} {\bf 34} (2011) 822
+   [arXiv:1012.3266 [nucl-ex]].
+   %%CITATION = ARXIV:1012.3266;%%
+
+\bibitem{Alessandria:2011rc}
+   F.~Alessandria {\it et al.} (CUORE Collaboration),
+   \emph{Sensitivity of CUORE to neutrinoless double-beta decay},
+   arXiv:1109.0494 [nucl-ex].
+   %%CITATION = ARXIV:1109.0494;%%
+
+\bibitem{Auger:2012gs}
+   M.~Auger {\it et al.} (EXO Collaboration),
+   \emph{The EXO-200 detector, part I: Detector design and construction},
+   \emph{JINST} {\bf 7} (2012) P05010
+   [arXiv:1202.2192 [physics.ins-det]].
+   %%CITATION = ARXIV:1202.2192;%%
+
+\bibitem{Albert:2013gpz}
+   J.~B.~Albert {\it et al.}  [EXO-200 Collaboration],
+   \emph{Improved measurement of the $2\nu\beta\beta$ half-life of $^{136}$Xe with the EXO-200 detector},
+   \emph{Phys.\ Rev.\ C} {\bf 89} (2014) 015502
+   [arXiv:1306.6106 [nucl-ex]].
+   %%CITATION = ARXIV:1306.6106;%%
+
+\bibitem{Auger:2012ar}
+   M.~Auger {\it et al.} (EXO Collaboration),
+   \emph{Search for neutrinoless double-beta decay in $^{136}$Xe with EXO-200},
+   \emph{Phys.\ Rev.\ Lett.} {\bf 109} (2012) 032505
+   [arXiv:1205.5608 [hep-ex]].
+   %%CITATION = ARXIV:1205.5608;%%
+
+\bibitem{Albert:2014afa}
+   J.~Albert,
+   \emph{Status and results from the EXO Collaboration},
+   \emph{EPJ Web Conf.} {\bf 66} (2014) 08001.
+   %%CITATION = 00776,66,08001;%%
+
+\bibitem{Ackermann:2012xja}
+  K.~H.~Ackermann {\it et al.} (GERDA Collaboration),
+   \emph{The GERDA experiment for the search of $0\nu\beta\beta$  decay in $^{76}$Ge},
+   \emph{Eur.\ Phys.\ J.\ C} {\bf 73} (2013) 2330,
+   [arXiv:1212.4067 [physics.ins-det]].
+   %%CITATION = ARXIV:1212.4067;%%
+
+\bibitem{Macolino:2013hca}
+   C.~Macolino (GERDA Collaboration),
+   \emph{Search for neutrinoless double beta decay with the GERDA experiment},
+   \emph{Nuovo Cim.\ C} {\bf 036} (2013) 13--20.
+   %%CITATION = NUCIA,C036,13;%%
+
+\bibitem{Agostini:2012nm}
+   M.~Agostini {\it et al.} (GERDA Collaboration),
+   \emph{Measurement of the half-life of the two-neutrino double beta decay of Ge-76 with the Gerda experiment},
+   \emph{J.\ Phys.\ G} {\bf 40} (2013) 035110
+   [arXiv:1212.3210 [nucl-ex]].
+   %%CITATION = ARXIV:1212.3210;%%
+
+\bibitem{Agostini:2013mzu}
+   M.~Agostini {\it et al.} (GERDA Collaboration),
+   \emph{Results on Neutrinoless Double-$\beta$ Decay of $^{76}$Ge from Phase I of the GERDA Experiment},
+   \emph{Phys.\ Rev.\ Lett.} {\bf 111} (2013) 122503
+   [arXiv:1307.4720 [nucl-ex]].
+   %%CITATION = ARXIV:1307.4720;%%
+
+\bibitem{Macolino:2014vya}
+   C.~Macolino (GERDA Collaboration),
+   \emph{The $GERDA$ experiment: results and perspectives},
+   \emph{J.\ Phys.\ Conf.\ Ser.} {\bf 556} (2014) 1,  012063.
+
+\bibitem{Abgrall:2013rze}
+   N.~Abgrall {\it et al.} (Majorana Collaboration),
+   \emph{The Majorana Demonstrator neutrinoless double-beta decay experiment},
+   \emph{Adv.\ High Energy Phys.} {\bf 2014} (2014) 365432
+   [arXiv:1308.1633 [physics.ins-det]].
+   %%CITATION = ARXIV:1308.1633;%%
+
+\bibitem{Raghavan:1994qw}
+   R.~S.~Raghavan,
+   \emph{New approach to the search for neutrinoless double beta decay},
+   \emph{Phys.\ Rev.\ Lett.} {\bf 72} (1994) 1411.
+   %%CITATION = PRLTA,72,1411;%%
+
+\bibitem{Abe:2009aa}
+   S.~Abe {\it et al.} (KamLAND Collaboration)
+   \emph{Production of radioactive isotopes through cosmic muon spallation in KamLAND},
+   \emph{Phys.\ Rev.\ C} {\bf 81} (2010) 025807
+   [arXiv:0907.0066 [hep-ex]].
+   %%CITATION = ARXIV:0907.0066;%%
+
+\bibitem{KamLANDZen:2012aa}
+   A.~Gando {\it et al.} (KamLAND-Zen Collaboration),
+   \emph{Measurement of the double-$\beta$ decay half-life of $^{136}$Xe with the KamLAND-Zen experiment},
+   \emph{Phys.\ Rev.\ C} {\bf 85} (2012) 045504
+   [arXiv:1201.4664 [hep-ex]].
+   %%CITATION = ARXIV:1201.4664;%%
+
+\bibitem{Gando:2012zm}
+   A.~Gando {\it et al.} (KamLAND-Zen Collaboration),
+   \emph{Limit on neutrinoless $\beta\beta$ decay of $^{136}$Xe from the first phase of KamLAND-Zen and comparison with the positive claim in $^{76}$Ge},
+   \emph{Phys.\ Rev.\ Lett.}  {\bf 110} (2013) 062502
+   [arXiv:1211.3863 [hep-ex]].
+   %%CITATION = ARXIV:1211.3863;%%
+
+\bibitem{Boger:1999bb}
+   J.~Boger {\it et al.} (SNO Collaboration),
+   \emph{The Sudbury neutrino observatory},
+   \emph{Nucl.\ Instrum.\ Meth.\ A} {\bf 449} (2000) 172
+   [nucl-ex/9910016].
+   %%CITATION = NUCL-EX/9910016;%%
+
+\bibitem{Biller:2014eha}
+   S.~Biller (SNO+ Collaboration),
+   \emph{SNO+ with Tellurium},
+   arXiv:1405.3401 [physics.ins-det].
+   %%CITATION = ARXIV:1405.3401;%%
+
+\bibitem{Lang:2013fta}
+   K.~Lang (NEMO Collaboration),
+   \emph{Latest results from the NEMO-3 experiment and status of SuperNEMO},
+   PoS ICHEP {\bf 2012} (2013) 376.
+
+\bibitem{Nygren:2009zz}
+   D.~Nygren,
+   \emph{High-pressure xenon gas electroluminescent TPC for $0\nu\beta\beta$-decay search}
+   \emph{Nucl.\ Instrum.\ Meth.\ A} {\bf 603} (2009) 337.
+   %%CITATION = NUIMA,A603,337;%%
+
 
 \end{thebibliography}
 
