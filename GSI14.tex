@@ -382,6 +382,42 @@ KamLAND-Zen, which has been collecting physics data since late 2011, has publish
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{NEXT}
+%%%
+The \emph{Neutrino Experiment with a Xenon TPC} (NEXT) \cite{Gomez-Cadenas:2013lta} will search for the neutrinoless double beta decay of \XE\ using a high-pressure xenon gas time projection chamber. Such a detector provides several valuable features: a) excellent \emph{energy resolution}, close, in principal, to 0.3\% FWHM at \Qbb; b) {tracking capabilities} that can be used for the distinction of signal (two electron emitted from a common vertex) and background (single electrons, mostly); c) a \emph{fully active and homogeneous} detector with no dead regions; and d) \emph{scalability} to large detector masses.
+
+%%%%%%%%%%
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{img/Next100.pdf}
+\caption{A cross-section drawing of the NEXT-100 detector. The pressure vessel (A) is made of stainless steel Grade 316Ti, and its dimensions are 130~cm inner diameter, 222~cm length and 1~cm thick walls, for a total mass of 1\,200 kg. The inner copper shield (B) is made of ultra-pure copper bars and is 12~cm thick, with a total mass of 9\,000 kg. The time projection chamber (D) includes the field cage, cathode, EL grids and HV penetrators. The light tube is made of thin teflon sheets coated with TPB (a wavelength shifter). The energy plane (E) is made of 60 PMTs housed in copper enclosures. The tracking plane (C) is made of MPPCs arranged into 8$\times$8 boards.} \label{fig.NEXT100}
+\end{figure}
+%%%%%%%%%%
+
+Following ideas introduced by D.\ Nygren (2009) \cite{Nygren:2009zz}, the design of the NEXT-100 detector (Figure \ref{fig.NEXT100}) is optimised for energy resolution by using proportional electroluminescent (EL) amplification of the ionisation signal. The detection process involves the use of the prompt scintillation light from the gas as start-of-event time, and the drift of the ionisation charge to the anode by means of an electric field ($\sim0.3$ kV/cm at 15 bar) where secondary EL scintillation is produced in the region defined by two highly transparent meshes, between which there is a field of $\sim20$ kV/cm at 15 bar. The detection of EL light provides an energy measurement using photomultipliers (PMTs) located behind the cathode (the \emph{energy plane}) as well as tracking through its detection a few mm away from production at the anode, via a dense array of silicon photomultipliers (the \emph{tracking plane}).
+
+The R\&D phase of the experiment was carried out with the large-scale prototypes NEXT-DEMO and NEXT-DBDM. NEXT-DEMO is as a large-scale prototype of NEXT-100. The pressure vessel has a length of 60 cm and a diameter of 30 cm. The vessel can withstand a pressure of up to 15 bar and hosts typically 1--2 kg of xenon. NEXT-DEMO is  equipped with an energy plane made of 19 Hamamatsu R7378A PMTs and a tracking plane made of 256 Hamamatsu SiPMs. 
+
+The detector has been operating successfully since 2011 and has demonstrated: (a) very good operational stability, with no leaks and very few sparks; (b) good energy resolution ; (c) track reconstruction with PMTs and with SiPMs coated with TPB; (d) excellent electron drift lifetime, of the order of 20 ms. Its construction, commissioning and operation has been instrumental in the development of the required knowledge to design and build the NEXT detector.
+
+The NEXT-DBDM prototype is a smaller chamber, with only 8 cm drift, but an aspect ratio (ratio diameter to length) similar to that of NEXT-100. The device has been used to perform detailed energy resolution studies, as well as studies to characterise neutrons in an HPXe. NEXT-DBDM achieves a resolution of 1\% FWHM at 660 keV and 15 bar, which extrapolates to 0.5\% at \Qbb.
+
+%%%%%
+\begin{figure}
+\centering
+\includegraphics[width= 0.8\textwidth]{img/TrackSignature.pdf}
+\includegraphics[width=0.45\textwidth]{img/EnergyBlobsSignal.pdf}
+\includegraphics[width=0.45\textwidth]{img/EnergyBlobsTl208.pdf}
+\caption{Top: Monte Carlo simulation of signal (left) and background (right) events in xenon gas at 15~bar. The color codes energy deposition in the gas. The signal tracks consist of two electrons emitted from a common vertex, and thus they feature blobs at both ends. Background event are, typically, single-electron tracks, featuring only one blob. Bottom: Probability distribution of signal (left) and background (right) events in terms of the energies of the end-of-track blobs. The blob labelled as `1' corresponds to the more energetic one, whereas `blob 2' corresponds to the less energetic of the two.} \label{fig.ETRK2}
+\end{figure}
+%%%%%
+
+In addition of excellent energy reconstruction, NEXT has a topological signature, not available in most \bbonu\ detectors. 
+Double beta decay events leave a distinctive topological signature in HPXe: a continuous track with larger energy depositions (\emph{blobs}) at both ends due to the Bragg-like peaks in the d$E$/d$x$ of the stopping electrons (figure \ref{fig.ETRK2}, top left). In contrast, background electrons are produced by Compton or photoelectric interactions, and are characterised by a single blob and, often, by a satellite cluster corresponding to the emission of 30-keV fluorescence X-rays by xenon (figure \ref{fig.ETRK2}, bottom left).
+Reconstruction of this topology using the tracking plane provides a powerful means of background rejection, as can be observed in the figure. In our TDR we chose a conservative cut to separate double--blob from single--blob events which provided a suppression factor of 20 for the background while keeping 80\% of the signal.  DEMO has reconstructed single electrons from \NA\ and \CS\ sources, as well as double electrons from the double escape peak of \TL\, demonstrating the robustness of the topological signal. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{SNO+} \label{subsec:SNO+}
 %%%
 SNO+, the follow-up of the \emph{Sudbury Neutrino Observatory} (SNO) \cite{Boger:1999bb}, is a multipurpose liquid scintillator experiment housed in SNOLAB (Ontario, Canada). The detector reuses many of the components of its predecessor, replacing the heavy water by 780~tonnes of liquid scintillator in order to obtain a lower energy threshold. The detector consists of a 12~m diameter acrylic vessel surrounded by about 9500 8-in photomultiplier tubes that provide a 54\% effective photocathode coverage. The acrylic vessel is immersed in a bath of ultra pure water that fills the remaining extent of the underground cavern, attenuating the background from external media such as the PMTs and surrounding rock. The density of the liquid scintillator (0.86~g/cm$^{3}$) being lower than that of the surrounding water leads to a large buoyant force on the acrylic vessel. To keep it in place, a hold-down rope net has been installed over the detector and anchored to the cavity floor.
@@ -408,64 +444,6 @@ projected background rate in the energy region around \Qbb\ is $5\times10^{-5}$~
 
 The SuperNEMO collaboration is currently building a module, 
 called the \emph{Demonstrator}, which will house a slightly denser source of approximately 7~kg of \SE. The beginning of operations is projected for 2015. It will be installed in the former location of the NEMO-3 apparatus. 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{NEXT}
-%%%
-
-%%%%%%%%%%
-\begin{figure}
-\centering
-\includegraphics[width=0.9\textwidth]{img/NEXT.png}
-\caption{\small A drawing of the NEXT-100 detector showing its main parts. The pressure vessel (PV) is made of a radio pure steel-titanium alloy. The PV dimensions are 130~cm inner diameter, 222~cm length, 1~cm thick walls, fot a total mass of 1\,200 kg. The inner copper shield (ICS) is made of ultra-pure copper bars and is 12~cm thick, with a total mass of 9\,000 kg. The time projection chamber includes the field cage, cathode, EL grids and HV penetrators.
-The light tube is made of thin teflon sheets coated with TPB (a wavelength shifter). 
-The energy plane is made of 60 PMTs housed in copper enclosures (cans).
-The tracking plane is made of MPPCs arranged into dice boards (DB). 
-} \label{fig.NEXT100}
-\end{figure}
-%%%%%%%%%%
-
-The \emph{Neutrino Experiment with a Xenon TPC} (NEXT)\footnote{http://next.ific.uv.es/next/} will search for \bbonu\ in \XE\ using  high-pressure xenon gas  time projection chambers 
-(HPXe) \cite{Nygren:2009zz, Granena:2009it, Alvarez:2012haa}, yielding: 
-a) {\bf excellent energy resolution}, with an intrinsic limit of about 0.3\% FWHM at \Qbb, and close to that of \GE\ detectors and a demonstrated result in the vicinity of 0.5\% FWHM; b)
-{\bf tracking capabilities} that provide a powerful topological signature to discriminate between signal (two electron tracks with a common vertex) and background (mostly, single electrons); c)
-{\bf a fully active and homogeneous detector}, with no dead regions; d) {\bf scalability} of the technique to large masses; 
-
-The design of the NEXT-100 detector (Figure \ref{fig.NEXT100}) is optimised for energy resolution by using proportional electroluminescent (EL) amplification of the ionisation signal\footnote{As proposed in \cite{Nygren:2009zz}}. The detection process involves the use of the prompt scintillation light from the gas as start-of-event time, and the drift of the ionisation charge to the anode by means of an electric field ($\sim0.3$ kV/cm at 15 bar) where secondary EL scintillation is produced in the region defined by two highly transparent meshes, between which there is a field of $\sim20$ kV/cm at 15 bar. The detection of EL light provides an energy measurement using photomultipliers (PMTs) located behind the cathode (the \emph{energy plane}) as well as tracking through its detection a few mm away from production at the anode, via a dense array of silicon photomultipliers (the \emph{tracking plane}).
-
-The R\&D phase of the experiment was carried out with the large-scale prototypes NEXT-DEMO and NEXT-DBDM
-
-\begin{figure}
-\centering
-\includegraphics[width=0.9\textwidth]{img/DemoSetup.png}
-\caption{\small The NEXT-DEMO setup at IFIC (Valencia, Spain).} \label{fig.DEMO}
-\end{figure}
-%%%%%%%%%%
-%
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.9\textwidth]{img2/DBDM.png}
-%\caption{\small The NEXT-DBDM prototype. Top-left: the pressure vessel, in the moment in which the field cage is inserted; (b) the field cage.} \label{fig.DBDM}
-%\end{figure}
-
-
-NEXT-DEMO, shown in figure \ref{fig.DEMO}, is as a large-scale prototype of NEXT-100. The pressure vessel has a length of 60 cm and a diameter of 30 cm. The vessel can withstand a pressure of up to 15 bar and hosts typically 1-2 kg of xenon. NEXT-DEMO is  equipped with an energy plane made of 19 Hamamatsu R7378A PMTs and a tracking plane made of 256 Hamamatsu SiPMs. 
-
-The detector has been operating successfully since 2011 and has demonstrated: (a) very good operational stability, with no leaks and very few sparks; (b) good energy resolution ; (c) track reconstruction with PMTs and with SiPMs coated with TPB; (d) excellent electron drift lifetime, of the order of 20 ms.Its construction, commissioning and operation has been instrumental in the development of the required knowledge to design and build the NEXT detector.
-
-The NEXT-DBDM prototype is a smaller chamber, with only 8 cm drift, but an aspect ratio (ratio diameter to length) similar to that of NEXT-100. The device has been used to perform detailed energy resolution studies, as well as studies to characterise neutrons in an HPXe. NEXT-DBDM achieves a resolution of 1\% FWHM at 660 keV and 15 bar, which extrapolates to 0.5\% at \Qbb.
-
-%%%%%
-\begin{figure}
-\centering
-\includegraphics[width=0.9\textwidth]{img/Topo2.png}
-\caption{\small The panel shows the reconstruction of a Monte Carlo signal (topleft) and background (bottomleft) event. The signal has two electrons (two blobs). The background has only one electron (one blob) and the associated emission of a 35 keV X-ray. The color codes energy deposition in the TPC. An scatter plot of the energy of the two blobs shows a clear separation between signal and background regions.}\label{fig.ETRK2}
-\end{figure}
-%%%%%
-
-In addition of excellent energy reconstruction, NEXT has a topological signature, not available in most \bbonu\ detectors. 
-Double beta decay events leave a distinctive topological signature in HPXe: a continuous track with larger energy depositions (\emph{blobs}) at both ends due to the Bragg-like peaks in the d$E$/d$x$ of the stopping electrons (figure \ref{fig.ETRK2}, topleft). In contrast, background electrons are produced by Compton or photoelectric interactions, and are characterised by a single blob and, often, by a satellite cluster corresponding to the emission of $\sim30$-keV fluorescence x-rays by xenon (figure \ref{fig.ETRK2}, bottomleft).
-Reconstruction of this topology using the tracking plane provides a powerful means of background rejection, as can be observed in the figure. In our TDR we chose a conservative cut to separate double--blob from single--blob events which provided a suppression factor of 20 for the background while keeping 80\% of the signal.  DEMO has reconstructed single electrons from \NA\ and \CS\ sources, as well as double electrons from the double escape peak of \TL\, demonstrating the robustness of the topological signal. 
 
 
 \section{Towards the tonne scale} \label{tonne}
@@ -501,7 +479,7 @@ KamLAND-Zen\hair\textsuperscript{\itshape a} \cite{Gando:2012zm, Asakura:2014lma
 %
 {\scshape Majorana}\textsuperscript{\itshape c} \cite{Abgrall:2013rze} & \GE\ & 4 & 0.0009 & 70 & 25 \\
 %
-NEXT-100\hair\textsuperscript{\itshape c} & \XE\ &  18 & 0.0006  & 28 & 91 \\
+NEXT-100\hair\textsuperscript{\itshape c} \cite{Gomez-Cadenas:2013lta} & \XE\ &  18 & 0.0006  & 28 & 91 \\
 %
 SNO+\hair\textsuperscript{\itshape c} \cite{Biller:2014eha} & \TE\ & 264 & 0.0001  & 15 & 800 \\
 %
@@ -982,6 +960,20 @@ In this paper, we have review the main experiments of the new-generation experim
    [arXiv:1211.3863 [hep-ex]].
    %%CITATION = ARXIV:1211.3863;%%
 
+\bibitem{Gomez-Cadenas:2013lta}
+   J.~J.~Gomez-Cadenas {\it et al.} (NEXT Collaboration),
+   \emph{Present status and future perspectives of the NEXT experiment},
+   \emph{Adv.\ High Energy Phys.} {\bf 2014} (2014) 907067
+   [arXiv:1307.3914 [physics.ins-det]].
+   %%CITATION = ARXIV:1307.3914;%%
+
+\bibitem{Nygren:2009zz}
+   D.~Nygren,
+   \emph{High-pressure xenon gas electroluminescent TPC for $0\nu\beta\beta$-decay search}
+   \emph{Nucl.\ Instrum.\ Meth.\ A} {\bf 603} (2009) 337.
+   %%CITATION = NUIMA,A603,337;%%
+
+
 \bibitem{Boger:1999bb}
    J.~Boger {\it et al.} (SNO Collaboration),
    \emph{The Sudbury neutrino observatory},
@@ -1000,11 +992,6 @@ In this paper, we have review the main experiments of the new-generation experim
    \emph{Latest results from the NEMO-3 experiment and status of SuperNEMO},
    PoS ICHEP {\bf 2012} (2013) 376.
 
-\bibitem{Nygren:2009zz}
-   D.~Nygren,
-   \emph{High-pressure xenon gas electroluminescent TPC for $0\nu\beta\beta$-decay search}
-   \emph{Nucl.\ Instrum.\ Meth.\ A} {\bf 603} (2009) 337.
-   %%CITATION = NUIMA,A603,337;%%
 
 \bibitem{Granena:2009it}
    F.~Gra\~nena {\it et al.} (NEXT Collaboration),
@@ -1075,6 +1062,7 @@ In this paper, we have review the main experiments of the new-generation experim
   Mod.\ Phys.\ Lett.\ A {\bf 16} (2001) 2409
   [hep-ph/0201231].
   %%CITATION = HEP-PH/0201231;%%
+
 
 
 \end{thebibliography}
